@@ -1,0 +1,21 @@
+CREATE OR REPLACE TRIGGER cpf_certo
+BEFORE INSERT OR UPDATE ON tecnico
+FOR EACH ROW
+BEGIN 
+    IF (LENGTH(:NEW.cpf) <> 11) THEN 
+        RAISE_APPLICATION_ERROR(-20901,'Numero de CPF invalido'); 
+    END IF; 
+END;
+
+/
+
+CREATE OR REPLACE TRIGGER cnpj_certo
+BEFORE INSERT OR UPDATE ON cliente
+FOR EACH ROW
+BEGIN 
+    IF (LENGTH(:NEW.cnpj) <> 14) THEN 
+        RAISE_APPLICATION_ERROR(-20902,'Numero de CNPJ invalido'); 
+    END IF; 
+END;
+
+/
