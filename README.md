@@ -7,3 +7,6 @@ Vídeo da apresentação do MiniMundo (1a. Entrega) - https://drive.google.com/f
 
 1a. Entrega: Minimundo e Modelo ER.
 2a. Entrega: Tabelas, Povoamento e Consultas.
+Bônus: Triggers
+
+Para o funcionamento correto, devem ser rodados na sequência: primeiro as tabelas, depois os triggers, depois o povoamento e por último as consultas em script completo ou individualmente.
